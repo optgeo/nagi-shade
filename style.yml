@@ -6,14 +6,6 @@ zoom: 13.955760822635057
 bearing: 60
 pitch: 60
 sources:
-  seamlessphoto:
-    type: raster
-    tiles:
-      - https://maps.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg
-    tileSize: 256
-    maxzoom: 18
-    minzoom: 2
-    attribution: 地理院
   gsibv-vectortile-source-1-4-16:
     type: vector
     tiles:
@@ -39,7 +31,7 @@ sprite: https://sprites.geolonia.com/basic
 glyphs: https://hfu.github.io/openmaptiles-fonts/{fontstack}/{range}.pbf
 layers:
   - !!inc/file layers/background.yml
-  - !!inc/file layers/seamlessphoto.yml
+  - !!inc/file layers/shade.yml
   - !!inc/file layers/buildings4302.yml
   - !!inc/file layers/buildings4301.yml
   - !!inc/file layers/buildings3111.yml

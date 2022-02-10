@@ -8,16 +8,6 @@
   "bearing": 60,
   "pitch": 60,
   "sources": {
-    "seamlessphoto": {
-      "type": "raster",
-      "tiles": [
-        "https://maps.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg"
-      ],
-      "tileSize": 256,
-      "maxzoom": 18,
-      "minzoom": 2,
-      "attribution": "地理院"
-    },
     "gsibv-vectortile-source-1-4-16": {
       "type": "vector",
       "tiles": [
@@ -52,19 +42,18 @@
     {
       "id": "background",
       "type": "background",
-      "layout": {},
       "paint": {
-        "background-color": "hsl(222, 56%, 4%)"
+        "background-color": "#aaa"
       }
     },
     {
-      "id": "seamlessphoto",
-      "type": "raster",
-      "source": "seamlessphoto",
+      "id": "shade",
+      "type": "hillshade",
+      "source": "et10b",
       "paint": {
-        "raster-contrast": 0.5,
-        "raster-brightness-max": 0.89,
-        "raster-fade-duration": 500
+        "hillshade-accent-color": "#000",
+        "hillshade-highlight-color": "#fff",
+        "hillshade-shadow-color": "#000"
       }
     },
     {
